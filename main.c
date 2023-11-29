@@ -16,7 +16,7 @@ struct Employee_Data
    char name[max_name_len];
    char ptrnmc[max_name_len]; // patronymic
    char post[max_post_len];
-   char sex;                  // 'М' или 'Ж'
+   char sex;                  // 'Рњ' РёР»Рё 'Р–'
    char hire_date[max_date_len];
 };
 */
@@ -27,7 +27,7 @@ struct Employee_Data
    char* name;
    char* ptrnmc; // patronymic
    char* post;
-   char* sex;   // 'М' или 'Ж' 
+   char* sex;   // 'Рњ' РёР»Рё 'Р–' 
    char* hire_date;
 };
 
@@ -45,23 +45,23 @@ int main()
    }
 
    struct Employee_Data prs = { 
-      "Иванов", 
-      "Иван", 
-      "Иванович", 
-      "Директор", 
-      "М", 
+      "РРІР°РЅРѕРІ", 
+      "РРІР°РЅ", 
+      "РРІР°РЅРѕРІРёС‡", 
+      "Р”РёСЂРµРєС‚РѕСЂ", 
+      "Рњ", 
       "01-01-2000" 
    };
    printf("%s", prs.ptrnmc);
 
    /*
-   char str[] = "Строка Яя!";
+   char str[] = "РЎС‚СЂРѕРєР° РЇСЏ!";
 
-   printf("Исходная строка: %s\n", str);
+   printf("РСЃС…РѕРґРЅР°СЏ СЃС‚СЂРѕРєР°: %s\n", str);
 
    Replace(str);
 
-   printf("Измененная строка: %s\n", str);
+   printf("РР·РјРµРЅРµРЅРЅР°СЏ СЃС‚СЂРѕРєР°: %s\n", str);
    */
 
    return 0;
